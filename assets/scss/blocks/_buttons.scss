@@ -1,0 +1,25 @@
+.btn-underline {
+	position: relative;
+	display: block;
+	padding: 0 0 5px 0;
+	color: var(--primary);
+	font-weight: 800;
+	font-size: 24px;
+	font-family: var(--font-secondary);
+	background: none;
+	border: none;
+
+	@include hg {
+		font-size: 20px;
+	}
+
+	&::before {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: var(--primary);
+		content: "";
+	}
+}
