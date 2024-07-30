@@ -76,7 +76,7 @@
 
 	&__menu {
 		display: flex;
-		gap: 60px;
+		gap: clamp(1.667rem, -3.333rem + 6.25vw, 3.333rem);
 		align-items: center;
 
 		@include lg {
@@ -113,6 +113,10 @@
 
 		@include hg {
 			display: none;
+		}
+
+		.contacts__tel {
+			font-size: clamp(1.667rem, 1rem + 0.833vw, 1.889rem);
 		}
 	}
 
