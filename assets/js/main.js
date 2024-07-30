@@ -278,34 +278,13 @@ try {
 
 //Слайдер blocks/rest
 
-const clientsSlider = document.querySelector('.clients__container');
+const welcomeSlider = document.querySelector('.welcome__advantages');
 
-if (clientsSlider) {
-	let clientsSwiper = new Swiper(clientsSlider, {
+if (welcomeSlider && window.innerWidth < 1440) {
+	let welcomeSwiper = new Swiper(welcomeSlider, {
 		slidesPerView: 'auto',
-		centeredSlides: true,
-		spaceBetween: 25,
-		navigation: {
-			nextEl: '.slider-panel__next',
-			prevEl: '.slider-panel__prev',
-		},
-		breakpoints: {
-			1440: {
-				slidesPerView: 4,
-				centeredSlides: false,
-			},
-			992: {
-				slidesPerView: 3,
-				centeredSlides: false,
-			},
-			769: {
-				slidesPerView: 2,
-				centeredSlides: false,
-			},
-			577: {
-				centeredSlides: false,
-			},
-		}
+		spaceBetween: 40,
+		freeMode: true
 	});
 }
 

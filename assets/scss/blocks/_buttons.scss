@@ -1,3 +1,42 @@
+.btn {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 415px;
+	min-height: 100px;
+	padding: 30px 40px;
+	color: var(--fc-dark);
+	font-weight: 800;
+	font-size: clamp(1.111rem, 1.06rem + 0.256vw, 1.333rem);
+	background: var(--primary);
+	border: none;
+	transition: var(--transition);
+
+	@include xs {
+		padding: 30px;
+	}
+
+	@include mouse {
+
+		&:hover {
+			transform: translateY(-3px);
+		}
+
+		&:active {
+			transform: translate(0);
+		}
+	}
+
+	svg {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		color: var(--fc-light);
+	}
+}
+
 .btn-underline {
 	position: relative;
 	display: block;

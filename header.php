@@ -94,3 +94,5 @@
 </header>
 
 <main class="main">
+	<?php if ( is_front_page() ) get_template_part('layouts/partials/welcome'); ?>
+
