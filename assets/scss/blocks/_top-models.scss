@@ -1,0 +1,178 @@
+.top-models {
+	margin: 70px 0 40px;
+
+	@include hg {
+		margin: 60px 0 30px;
+	}
+
+	@include xs {
+		margin: 30px 0;
+	}
+
+	&__title {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title-before {
+
+		@include xs {
+			font-size: 16px;
+		}
+	}
+
+	&__title-text {
+		color: var(--fc-gray);
+	}
+
+	&__box {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 30px 160px;
+		align-items: center;
+		margin-top: 60px;
+
+		@include hg {
+			gap: 30px 60px;
+			margin-top: 40px;
+		}
+
+		@include md {
+			grid-template-columns: 1fr;
+		}
+
+		@include xs {
+			margin-top: 15px;
+		}
+	}
+
+	&__tabs {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include md {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__tab {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		min-width: 270px;
+		padding: 15px 20px;
+		font-size: clamp(1.111rem, 0.957rem + 0.769vw, 1.778rem);
+		text-align: center;
+		border: 1px solid transparent;
+		cursor: pointer;
+		transition: var(--transition);
+
+		@include md {
+			flex: 1 0 auto;
+			width: fit-content;
+			min-width: 200px;
+		}
+
+		@include sm {
+			flex: 1 0 50%;
+			min-width: auto;
+			padding: 15px;
+		}
+
+		@include xs {
+			// word-break: break-all;
+		}
+
+		@include mouse {
+
+			&:hover {
+				color: var(--primary);
+			}
+		}
+
+		&.active {
+			color: var(--primary);
+			border-color: var(--primary);
+			cursor: default;
+		}
+	}
+
+	&__content {
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__gallery {
+		display: none;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+
+		@include lg {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@include xs {
+			grid-template-columns: 1fr;
+		}
+
+		&.active {
+			display: grid;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 4/5;
+		overflow: hidden;
+
+		@include mouse {
+
+			&:hover {
+
+				img {
+					scale: 1.02;
+				}
+			}
+		}
+
+		&:nth-child(2) {
+
+			@include xs {
+				display: none;
+			}
+		}
+
+		&:nth-child(3) {
+
+			@include lg {
+				display: none;
+			}
+		}
+
+		&.hidden {
+			display: none;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: var(--transition);
+		}
+	}
+
+	&__btn {
+		margin: 30px auto 0;
+
+		@include xs {
+			margin: 20px auto 0;
+		}
+	}
+}
