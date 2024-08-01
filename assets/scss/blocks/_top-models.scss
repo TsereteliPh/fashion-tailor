@@ -22,7 +22,13 @@
 	}
 
 	&__title-text {
+		max-width: none;
+		margin: 0;
 		color: var(--fc-gray);
+
+		@include hg {
+			text-align: left;
+		}
 	}
 
 	&__box {
