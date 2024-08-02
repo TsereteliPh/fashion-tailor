@@ -1,0 +1,251 @@
+.logistics {
+	position: relative;
+	margin-top: 60px;
+	padding-bottom: 250px;
+	overflow: hidden;
+
+	@include hg {
+		margin-top: 40px;
+		padding-bottom: 30vw;
+	}
+
+	@include xs {
+		padding-bottom: 40vw;
+	}
+
+	&::before {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		max-width: 1345px;
+		height: auto;
+		aspect-ratio: 1345/500;
+		background: url(assets/images/logistics-bg.jpg) no-repeat 50% / cover;
+		transform: translateX(-45%);
+		content: "";
+
+		@include hg {
+			transform: translateX(-50%);
+		}
+	}
+
+	&__slider {
+		margin-top: 50px;
+		overflow: hidden;
+
+		@include sm {
+			margin-top: 30px;
+			overflow: visible;
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 75px 100px;
+
+		@include hg {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include md {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@include sm {
+			display: flex;
+			gap: 0;
+		}
+	}
+
+	&__item {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr auto;
+		gap: 0 20px;
+
+		@include sm {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+			width: 100%;
+			max-width: 450px;
+			height: auto;
+			padding-top: 30px;
+		}
+
+		&::before {
+			position: absolute;
+			top: 40px;
+			right: -75px;
+			width: 50px;
+			height: 15px;
+			background: url(assets/images/icon-arrow.svg) no-repeat 50% / contain;
+			content: "";
+
+			@include sm {
+				top: 0;
+				right: auto;
+				left: 0;
+			}
+		}
+
+		&:first-child {
+			grid-row: 2/3;
+
+			@include hg {
+				grid-row: auto;
+			}
+
+			&::before {
+				top: -40px;
+				right: auto;
+				left: 20px;
+				transform: rotate(-90deg);
+
+				@include hg {
+					top: 40px;
+					right: -75px;
+					left: auto;
+					transform: none;
+				}
+
+				@include sm {
+					top: 0;
+					right: auto;
+					left: 0;
+				}
+			}
+		}
+
+		&:nth-child(4) {
+
+			@include hg {
+				order: 2;
+			}
+
+			@include md {
+				order: 0;
+			}
+
+			&::before {
+
+				@include hg {
+					top: -40px;
+					right: auto;
+					left: 50%;
+					transform: rotate(90deg);
+				}
+
+				@include md {
+					display: none;
+				}
+
+				@include sm {
+					top: 0;
+					right: auto;
+					left: 0;
+					display: block;
+					transform: none;
+				}
+			}
+		}
+
+		&:nth-child(5) {
+
+			@include hg {
+				order: 1;
+			}
+
+			@include md {
+				order: 0;
+			}
+
+			&::before {
+
+				@include hg {
+					transform: rotate(180deg);
+				}
+
+				@include md {
+					transform: none;
+				}
+			}
+		}
+
+		&:last-child {
+			grid-column: 4/5;
+
+			@include hg {
+				grid-column: auto;
+			}
+
+			&::before {
+				top: -40px;
+				right: auto;
+				left: 20px;
+				transform: rotate(90deg);
+
+				@include hg {
+					top: 40px;
+					right: -75px;
+					left: auto;
+					transform: rotate(180deg);
+				}
+
+				@include sm {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__item-icon {
+		display: flex;
+		align-items: center;
+		width: 60px;
+		height: 60px;
+
+		@include sm {
+			order: -1;
+			margin-top: auto;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__item-label {
+		align-self: end;
+		color: var(--primary);
+		font-size: 22px;
+		line-height: 1.4;
+
+		@include sm {
+			align-self: auto;
+		}
+	}
+
+	&__item-text {
+		grid-column: span 2;
+		color: var(--fc-gray);
+		line-height: 1.4;
+	}
+
+	&__btn {
+		max-width: 350px;
+		margin-top: 15px;
+
+		@include hg {
+			margin: 40px auto 0;
+		}
+
+		@include sm {
+			margin: 30px auto 0;
+		}
+	}
+}

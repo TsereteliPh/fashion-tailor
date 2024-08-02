@@ -276,7 +276,7 @@ try {
 
 //Swiper
 
-//Слайдер blocks/rest
+//Слайдер welcome
 
 const welcomeSlider = document.querySelector('.welcome__advantages');
 
@@ -285,6 +285,30 @@ if (welcomeSlider && window.innerWidth < 1440) {
 		slidesPerView: 'auto',
 		spaceBetween: 40,
 		freeMode: true
+	});
+}
+
+//Слайдер blocks/logistics
+
+const logisticsSlider = document.querySelector('.logistics__slider');
+
+if (logisticsSlider && window.innerWidth < 769) {
+	let logisticsSwiper = new Swiper(logisticsSlider, {
+		slidesPerView: 'auto',
+		spaceBetween: 60,
+		pagination: {
+			el: '.logistics__pagination',
+			bulletClass: 'pagination__bullet',
+			bulletActiveClass: 'active',
+			clickable: true
+		},
+		on: {
+			afterInit: function() {
+				if (this.slides.length <= this.params.slidesPerView) {
+					this.pagination.el.style.display = 'none';
+				}
+			}
+		}
 	});
 }
 
