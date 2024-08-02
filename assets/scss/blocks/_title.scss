@@ -23,4 +23,20 @@
 			text-indent: 0;
 		}
 	}
+
+	&--default {
+		max-width: none;
+		margin: 0;
+		text-align: center;
+
+		@include sm {
+			text-align: center;
+		}
+
+		span {
+			display: inline;
+			color: var(--primary);
+			text-indent: 0;
+		}
+	}
 }
