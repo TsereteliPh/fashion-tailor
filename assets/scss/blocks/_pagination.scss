@@ -15,10 +15,6 @@
 		cursor: pointer;
 		transition: var(--transition);
 
-		@include xs {
-			width: 15px;
-		}
-
 		&.active {
 			background: var(--primary);
 			cursor: default;
