@@ -64,3 +64,58 @@
 		content: "";
 	}
 }
+
+.btn-prev,
+.btn-next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	padding: 0;
+	background: var(--fc-gray);
+	border: none;
+	cursor: pointer;
+	transition: var(--transition);
+
+	@include mouse {
+
+		&:hover {
+			transform: translateY(-3px);
+		}
+	}
+
+	&.swiper-button-disabled {
+		background: #c6c6c6;
+		cursor: default;
+
+		@include mouse {
+
+			&:hover {
+				transform: none;
+			}
+		}
+	}
+
+	svg {
+		color: var(--fc-light);
+	}
+
+	&--colored {
+		background: var(--primary);
+	}
+}
+
+.btn-prev {
+
+	svg {
+		transform: rotate(135deg);
+	}
+}
+
+.btn-next {
+
+	svg {
+		transform: rotate(-45deg);
+	}
+}

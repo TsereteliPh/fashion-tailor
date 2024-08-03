@@ -312,6 +312,48 @@ if (logisticsSlider && window.innerWidth < 769) {
 	});
 }
 
+//Слайдер blocks/order-reasons
+
+const reasonsCarousel = document.querySelector('.order-reasons__slider');
+
+if (reasonsCarousel) {
+	let reasonsSwiper = new Swiper(reasonsCarousel, {
+		slidesPerView: 'auto',
+		spaceBetween: 20,
+		centerInsufficientSlides: true,
+		navigation: {
+			prevEl: '.order-reasons__prev',
+			nextEl: '.order-reasons__next'
+		},
+		pagination: {
+			el: '.order-reasons__pagination',
+			bulletClass: 'pagination__bullet',
+			bulletActiveClass: 'active',
+			clickable: true
+		},
+		breakpoints: {
+			1440: {
+				slidesPerView: 4,
+				spaceBetween: 40
+			},
+			992: {
+				slidesPerView: 3,
+			},
+			769: {
+				slidesPerView: 2
+			}
+		},
+		on: {
+			afterInit: function() {
+				if (this.slides.length <= this.params.slidesPerView) {
+					this.pagination.el.style.display = 'none';
+					this.navigation.el.style.display = 'none';
+				}
+			}
+		}
+	});
+}
+
 // Функционал шапки сайта
 
 document.addEventListener('DOMContentLoaded', function(e) {
