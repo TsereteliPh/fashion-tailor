@@ -36,6 +36,15 @@
 		bottom: 10px;
 		color: var(--fc-light);
 	}
+
+	&--unfill {
+		background: none;
+		border: 1px solid var(--primary);
+
+		svg {
+			color: var(--primary);
+		}
+	}
 }
 
 .btn-underline {
