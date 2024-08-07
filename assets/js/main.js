@@ -354,6 +354,17 @@ if (reasonsCarousel) {
 	});
 }
 
+//Слайдер blocks/order-reasons
+
+const fabricsSlider = document.querySelector('.fabrics__slider');
+
+if (fabricsSlider && window.innerWidth < 769) {
+	let fabricsSwiper = new Swiper(fabricsSlider, {
+		slidesPerView: 'auto',
+		spaceBetween: 20
+	});
+}
+
 // Функционал шапки сайта
 
 document.addEventListener('DOMContentLoaded', function(e) {
