@@ -403,6 +403,41 @@ if (reviewsSliders) {
 	});
 }
 
+//Слайдер blocks/partners
+
+const partnersSlider = document.querySelector('.partners__slider');
+
+if (partnersSlider) {
+	let partnersSwiper = new Swiper(partnersSlider, {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		autoHeight: true,
+		navigation: {
+			prevEl: '.partners__prev',
+			nextEl: '.partners__next'
+		},
+		breakpoints: {
+			// 1440: {
+			// 	slidesPerView: 4,
+			// 	spaceBetween: 40
+			// },
+			992: {
+				spaceBetween: 75
+			},
+			// 769: {
+			// 	slidesPerView: 2
+			// }
+		},
+		on: {
+			afterInit: function() {
+				if (this.slides.length <= this.params.slidesPerView) {
+					this.navigation.prevEl.parentNode.style.display = 'none';
+				}
+			}
+		}
+	});
+}
+
 // Функционал шапки сайта
 
 document.addEventListener('DOMContentLoaded', function(e) {
