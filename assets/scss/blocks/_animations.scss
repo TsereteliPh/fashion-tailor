@@ -5,3 +5,21 @@
 	}
 }
 
+@keyframes reviews-show {
+
+	0% {
+		scale: 0.8;
+		opacity: 0;
+	}
+
+	60% {
+		scale: 1.05;
+		opacity: 1;
+	}
+
+	100% {
+		scale: 1;
+		opacity: 1;
+	}
+}
+

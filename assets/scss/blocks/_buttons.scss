@@ -128,3 +128,33 @@
 		transform: rotate(-45deg);
 	}
 }
+
+.btn-play {
+	position: relative;
+	width: 125px;
+	height: auto;
+	aspect-ratio: 1/1;
+	background: #fff;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0 0 15px rgba(#000, 0.2);
+	cursor: pointer;
+	transition: var(--transition);
+
+	@include hg {
+		width: 80px;
+	}
+
+	&::before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-40%, -50%);
+		content: "";
+		@include ui-triangle(to right, 30px, 40px, var(--primary));
+
+		@include hg {
+			@include ui-triangle(to right, 25px, 30px, var(--primary));
+		}
+	}
+}

@@ -1,0 +1,95 @@
+.reviews {
+	padding: 80px 0;
+	overflow: hidden;
+	background: url(assets/images/reviews-bg.jpg) no-repeat 50% / cover;
+
+	@include hg {
+		padding: 60px 0;
+	}
+
+	@include xs {
+		padding: 60px 0 40px;
+	}
+
+	&__tabs {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		align-items: center;
+		justify-content: center;
+		margin-top: 30px;
+
+		@include xs {
+			margin-top: 20px;
+		}
+	}
+
+	&__tab {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 15px 30px;
+		text-align: center;
+		border: 1px solid transparent;
+		cursor: pointer;
+		transition: var(--transition);
+
+		&.active {
+			border-color: #fff;
+			cursor: default;
+		}
+	}
+
+	&__content {
+		position: relative;
+		margin-top: 25px;
+	}
+
+	&__slider {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 0 70px;
+		visibility: hidden;
+
+		@include md {
+			padding: 0;
+		}
+
+		&.active {
+			position: static;
+			visibility: visible;
+			animation: reviews-show 0.3s ease-out;
+
+			.reviews__prev,
+			.reviews__next {
+				transition: var(--transition);
+			}
+		}
+	}
+
+	&__controls {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		z-index: var(--ui-index-1);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		transform: translateY(-50%);
+		pointer-events: none;
+
+		@include md {
+			position: static;
+			margin-top: 30px;
+			transform: none;
+		}
+	}
+
+	&__prev,
+	&__next {
+		transition: none;
+		pointer-events: all;
+	}
+}

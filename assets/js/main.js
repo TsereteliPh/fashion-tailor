@@ -347,7 +347,7 @@ if (reasonsCarousel) {
 			afterInit: function() {
 				if (this.slides.length <= this.params.slidesPerView) {
 					this.pagination.el.style.display = 'none';
-					this.navigation.el.style.display = 'none';
+					this.navigation.prevEl.parentNode.style.display = 'none';
 				}
 			}
 		}
@@ -362,6 +362,44 @@ if (fabricsSlider && window.innerWidth < 769) {
 	let fabricsSwiper = new Swiper(fabricsSlider, {
 		slidesPerView: 'auto',
 		spaceBetween: 20
+	});
+}
+
+//Слайдер blocks/reviews
+
+const reviewsSliders = document.querySelectorAll('.reviews__slider');
+
+if (reviewsSliders) {
+	reviewsSliders.forEach(slider => {
+		let reviewsSwiper = new Swiper(slider, {
+			slidesPerView: 1,
+			spaceBetween: 20,
+			autoHeight: true,
+			navigation: {
+				prevEl: '.reviews__prev',
+				nextEl: '.reviews__next'
+			},
+			breakpoints: {
+				1440: {
+					slidesPerView: 2,
+					spaceBetween: 90,
+				},
+				992: {
+					slidesPerView: 2,
+					spaceBetween: 75
+				},
+				769: {
+					slidesPerView: 2
+				}
+			},
+			on: {
+				afterInit: function() {
+					if (this.slides.length <= this.params.slidesPerView) {
+						this.navigation.prevEl.parentNode.style.display = 'none';
+					}
+				}
+			}
+		});
 	});
 }
 
