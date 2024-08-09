@@ -417,20 +417,54 @@ if (partnersSlider) {
 			nextEl: '.partners__next'
 		},
 		breakpoints: {
-			// 1440: {
-			// 	slidesPerView: 4,
-			// 	spaceBetween: 40
-			// },
 			992: {
 				spaceBetween: 75
 			},
-			// 769: {
-			// 	slidesPerView: 2
-			// }
 		},
 		on: {
 			afterInit: function() {
 				if (this.slides.length <= this.params.slidesPerView) {
+					this.navigation.prevEl.parentNode.style.display = 'none';
+				}
+			}
+		}
+	});
+}
+
+//Слайдер blocks/order-reasons
+
+const gallerySlider = document.querySelector('.gallery-slider__slider');
+
+if (gallerySlider) {
+	let gallerySwiper = new Swiper(gallerySlider, {
+		slidesPerView: 'auto',
+		spaceBetween: 20,
+		centerInsufficientSlides: true,
+		navigation: {
+			prevEl: '.gallery-slider__prev',
+			nextEl: '.gallery-slider__next'
+		},
+		pagination: {
+			el: '.gallery-slider__pagination',
+			bulletClass: 'pagination__bullet',
+			bulletActiveClass: 'active',
+			clickable: true
+		},
+		breakpoints: {
+			1440: {
+				slidesPerView: 4,
+			},
+			992: {
+				slidesPerView: 3,
+			},
+			769: {
+				slidesPerView: 2
+			}
+		},
+		on: {
+			afterInit: function() {
+				if (this.slides.length <= this.params.slidesPerView) {
+					this.pagination.el.style.display = 'none';
 					this.navigation.prevEl.parentNode.style.display = 'none';
 				}
 			}
