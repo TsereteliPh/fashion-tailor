@@ -54,14 +54,14 @@ acf_add_local_field_group(array(
 				'acfe_flexible_grid_wrap' => false,
 			),
 			'layouts' => array(
-				'layout_66a23b9b088c6' => array(
-					'key' => 'layout_66a23b9b088c6',
-					'name' => 'top-models',
-					'label' => 'Топ модели',
+				'layout_66b62696c49d0' => array(
+					'key' => 'layout_66b62696c49d0',
+					'name' => 'image-text',
+					'label' => 'Изображение + Текст',
 					'display' => 'block',
 					'sub_fields' => array(
 						array(
-							'key' => 'field_66aa15242b4fd',
+							'key' => 'field_66b626a4c49d3',
 							'label' => '',
 							'name' => '',
 							'aria-label' => '',
@@ -75,7 +75,7 @@ acf_add_local_field_group(array(
 								'id' => '',
 							),
 							'clone' => array(
-								0 => 'group_66aa131ac5f64',
+								0 => 'group_66b623c1359e9',
 							),
 							'display' => 'seamless',
 							'layout' => 'block',
@@ -204,6 +204,56 @@ acf_add_local_field_group(array(
 					'acfe_layout_col' => 'auto',
 					'acfe_layout_allowed_col' => false,
 				),
+				'layout_66a23b9b088c6' => array(
+					'key' => 'layout_66a23b9b088c6',
+					'name' => 'top-models',
+					'label' => 'Топ модели',
+					'display' => 'block',
+					'sub_fields' => array(
+						array(
+							'key' => 'field_66aa15242b4fd',
+							'label' => '',
+							'name' => '',
+							'aria-label' => '',
+							'type' => 'clone',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array(
+								'width' => '',
+								'class' => '',
+								'id' => '',
+							),
+							'clone' => array(
+								0 => 'group_66aa131ac5f64',
+							),
+							'display' => 'seamless',
+							'layout' => 'block',
+							'prefix_label' => 0,
+							'prefix_name' => 0,
+							'acfe_field_group_condition' => 0,
+							'acfe_seamless_style' => 0,
+							'acfe_clone_modal' => 0,
+							'acfe_clone_modal_close' => 0,
+							'acfe_clone_modal_button' => '',
+							'acfe_clone_modal_size' => 'large',
+						),
+					),
+					'min' => '',
+					'max' => '',
+					'acfe_flexible_thumbnail' => '',
+					'acfe_flexible_render_template' => false,
+					'acfe_flexible_render_style' => false,
+					'acfe_flexible_render_script' => false,
+					'acfe_flexible_settings' => false,
+					'acfe_flexible_settings_size' => 'medium',
+					'acfe_layout_locations' => array(
+					),
+					'acfe_flexible_modal_edit_size' => false,
+					'acfe_flexible_category' => false,
+					'acfe_layout_col' => 'auto',
+					'acfe_layout_allowed_col' => false,
+				),
 				'layout_66ab4a0a5c739' => array(
 					'key' => 'layout_66ab4a0a5c739',
 					'name' => 'sew-to-measurements',
@@ -295,7 +345,7 @@ acf_add_local_field_group(array(
 	'acfe_display_title' => '',
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1723206742,
+	'modified' => 1723213491,
 ));
 
 endif;
