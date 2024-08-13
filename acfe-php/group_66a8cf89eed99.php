@@ -24,6 +24,9 @@ acf_add_local_field_group(array(
 			'acfe_seamless_style' => 0,
 			'acfe_group_modal' => 0,
 			'acfe_field_group_condition' => 0,
+			'acfe_group_modal_close' => 0,
+			'acfe_group_modal_button' => '',
+			'acfe_group_modal_size' => 'large',
 			'sub_fields' => array(
 				array(
 					'key' => 'field_66a8e23290b8a',
@@ -226,9 +229,6 @@ acf_add_local_field_group(array(
 					'library' => 'all',
 				),
 			),
-			'acfe_group_modal_close' => 0,
-			'acfe_group_modal_button' => '',
-			'acfe_group_modal_size' => 'large',
 		),
 	),
 	'location' => array(
@@ -236,7 +236,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'page_type',
 				'operator' => '==',
-				'value' => 'front_page',
+				'value' => 'top_level',
 			),
 		),
 	),
@@ -256,7 +256,7 @@ acf_add_local_field_group(array(
 	'acfe_display_title' => '',
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1722357050,
+	'modified' => 1723539286,
 ));
 
 endif;

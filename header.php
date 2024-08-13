@@ -94,5 +94,5 @@
 </header>
 
 <main class="main">
-	<?php if ( is_front_page() ) get_template_part('layouts/partials/welcome'); ?>
+	<?php if ( is_page() && ! $post->post_parent ) get_template_part('layouts/partials/welcome'); ?>
 
