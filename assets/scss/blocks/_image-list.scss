@@ -1,4 +1,4 @@
-.image-text {
+.image-list {
 	padding: 100px 0;
 	background: var(--bg-primary) 50% / cover;
 
@@ -25,6 +25,38 @@
 
 		&--right {
 			margin-left: auto;
+		}
+
+		&--center {
+			max-width: none;
+
+			.image-list__title {
+				max-width: 760px;
+			}
+
+			.image-list__small-text {
+				max-width: 400px;
+			}
+
+			.image-list__text {
+				max-width: 760px;
+			}
+
+			.image-list__list {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 50px 30vw;
+				margin-top: 70px;
+
+				@include hg {
+					gap: 30px 100px;
+				}
+
+				@include md {
+					grid-template-columns: 1fr;
+					gap: 20px;
+				}
+			}
 		}
 	}
 

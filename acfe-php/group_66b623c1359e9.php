@@ -4,7 +4,7 @@ if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_66b623c1359e9',
-	'title' => 'Block:image-text',
+	'title' => 'Block:image-list',
 	'fields' => array(
 		array(
 			'key' => 'field_66b627d53b842',
@@ -22,6 +22,7 @@ acf_add_local_field_group(array(
 			),
 			'choices' => array(
 				'left' => 'Слева',
+				'center' => 'По центру',
 				'right' => 'Справа',
 			),
 			'default_value' => '',
@@ -299,7 +300,7 @@ acf_add_local_field_group(array(
 	'acfe_display_title' => '',
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1723538724,
+	'modified' => 1723643731,
 ));
 
 endif;
