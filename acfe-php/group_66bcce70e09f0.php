@@ -201,6 +201,28 @@ acf_add_local_field_group(array(
 			'acfe_field_group_condition' => 0,
 		),
 		array(
+			'key' => 'field_66bdf9bd06882',
+			'label' => 'Дополнительный текст',
+			'name' => 'extra',
+			'aria-label' => '',
+			'type' => 'textarea',
+			'instructions' => 'Отображает текст в темной области в углу блока',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'acfe_textarea_code' => 0,
+			'maxlength' => '',
+			'rows' => 4,
+			'placeholder' => '',
+			'new_lines' => '',
+			'acfe_field_group_condition' => 0,
+		),
+		array(
 			'key' => 'field_66bccef2fe87c',
 			'label' => 'Фоновое изображение',
 			'name' => 'bg',
@@ -216,7 +238,7 @@ acf_add_local_field_group(array(
 			),
 			'uploader' => '',
 			'acfe_thumbnail' => 0,
-			'return_format' => 'url',
+			'return_format' => 'array',
 			'min_width' => '',
 			'min_height' => '',
 			'min_size' => '',
@@ -254,7 +276,7 @@ acf_add_local_field_group(array(
 	'acfe_display_title' => '',
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1723650513,
+	'modified' => 1723726522,
 ));
 
 endif;
