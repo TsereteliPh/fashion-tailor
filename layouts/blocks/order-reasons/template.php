@@ -1,9 +1,10 @@
 <?php
+	$bg = get_sub_field( 'bg' );
 	$reasons = get_sub_field( 'reasons' );
 	$extra = get_sub_field( 'extra' );
 ?>
 
-<section class="order-reasons<?php echo $extra ? ' order-reasons--extra' : ''; ?>">
+<section class="order-reasons<?php echo $extra && ! $bg ? ' order-reasons--extra' : ''; ?>" <?php echo $bg ? 'style="background-image: url(' . $bg . ');"' : ''; ?>>
 	<div class="container">
 		<?php if ( $reasons ) : ?>
 			<div class="order-reasons__slider swiper">
