@@ -228,6 +228,37 @@ acf_add_local_field_group(array(
 				),
 			),
 		),
+		array(
+			'key' => 'field_66bf588dadb4a',
+			'label' => 'Каталог',
+			'name' => 'catalog',
+			'aria-label' => '',
+			'type' => 'file',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'uploader' => '',
+			'return_format' => 'url',
+			'upload_folder' => '',
+			'multiple' => 0,
+			'max' => '',
+			'min_size' => '',
+			'max_size' => '',
+			'mime_types' => '',
+			'acfe_field_group_condition' => 0,
+			'library' => 'all',
+			'preview_style' => 'default',
+			'placeholder' => 'Select',
+			'button_label' => 'Добавить файл',
+			'stylised_button' => 0,
+			'file_count' => 0,
+			'min' => '',
+		),
 	),
 	'location' => array(
 		array(
@@ -254,7 +285,7 @@ acf_add_local_field_group(array(
 	'acfe_display_title' => '',
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1722502127,
+	'modified' => 1723816112,
 ));
 
 endif;

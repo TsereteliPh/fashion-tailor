@@ -32,11 +32,12 @@
 						<?php endforeach; ?>
 					</ul>
 
-					<button class="btn sew-to-measurements__download" type="button">
-						<?php //TODO download btn ?>
-						Скачать весь каталог
-						<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>
-					</button>
+					<?php if ( get_sub_field( 'catalog' ) ) : ?>
+						<a href="<?php the_sub_field( 'catalog' ); ?>" class="btn sew-to-measurements__download" download>
+							Скачать весь каталог
+							<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>
+						</a>
+					<?php endif; ?>
 				</div>
 
 				<?php
