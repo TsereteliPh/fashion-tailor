@@ -18,7 +18,7 @@
 					<div class="certificates__slider swiper">
 						<div class="certificates__gallery swiper-wrapper">
 							<?php foreach ( $certificates as $certificate ) : ?>
-								<a href="<?php echo $certificate['url']; ?>" class="certificates__link swiper-slide" data-fancybox="certificates-gallry-<?php echo $args['block_id']; ?>">
+								<a href="<?php echo $certificate['url']; ?>" class="certificates__link swiper-slide" data-fancybox="certificates-gallery-<?php echo $args['block_id']; ?>">
 									<?php echo wp_get_attachment_image( $certificate['id'], 'large', false ); ?>
 								</a>
 							<?php endforeach; ?>
