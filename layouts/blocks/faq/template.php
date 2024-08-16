@@ -26,7 +26,7 @@
 			?>
 
 			<div class="faq__extra">
-				<button class="btn btn--unfill faq__btn" type="button" data-fancybox data-src="<?php //TODO modal ?>">
+				<button class="btn btn--unfill faq__btn" type="button" data-fancybox data-src="#question">
 					Задать другой вопрос
 					<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>
 				</button>

@@ -14,7 +14,7 @@
 				<div class="discussion-banner__text"><?php the_sub_field( 'text' ); ?></div>
 			<?php endif; ?>
 
-			<button class="btn discussion-banner__btn" type="button" data-fancybox data-src="<?php //TODO modal ?>">
+			<button class="btn discussion-banner__btn" type="button" data-fancybox data-src="#callback">
 				Обсудить заказ
 				<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>
 			</button>

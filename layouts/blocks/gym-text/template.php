@@ -10,7 +10,7 @@
 				<div class="gym-text__text"><?php the_sub_field( 'text' ); ?></div>
 			<?php endif; ?>
 
-			<button class="btn gym-text__btn" type="button" data-fancybox data-src="<?php //TODO modal ?>">
+			<button class="btn gym-text__btn" type="button" data-fancybox data-src="#callback">
 				Получить консультацию
 				<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>
 			</button>

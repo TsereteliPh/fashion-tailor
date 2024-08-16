@@ -238,6 +238,11 @@ acf_add_local_field_group(array(
 				'operator' => '==',
 				'value' => 'top_level',
 			),
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'page',
+			),
 		),
 	),
 	'menu_order' => 0,
@@ -256,7 +261,7 @@ acf_add_local_field_group(array(
 	'acfe_display_title' => '',
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1723539286,
+	'modified' => 1723814982,
 ));
 
 endif;

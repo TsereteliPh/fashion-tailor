@@ -56,7 +56,7 @@
 				</div>
 			<?php endif; ?>
 
-			<button class="btn-underline footer__callback" type="button" data-fancybox data-src="<?php //TODO: callback modal ?>">Заказать звонок</button>
+			<button class="btn-underline footer__callback" type="button" data-fancybox data-src="#callback">Заказать звонок</button>
 		</div>
 	</div>
 </footer>

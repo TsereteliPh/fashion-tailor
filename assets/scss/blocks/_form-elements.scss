@@ -1,0 +1,29 @@
+.input {
+	display: block;
+	width: 100%;
+	min-height: 100px;
+	padding: 30px 40px;
+	color: var(--fc-dark);
+	font-weight: 800;
+	font-size: 24px;
+	font-family: var(--font-secondary);
+	background: #3d3d3d;
+	border: 1px solid transparent;
+	transition: var(--transition);
+
+	@include md {
+		min-height: 60px;
+		padding: 15px 20px;
+		font-size: 18px;
+	}
+
+	@include xs {
+		min-height: 50px;
+		font-size: 16px;
+	}
+
+	&:hover,
+	&:focus {
+		border-color: var(--primary);
+	}
+}

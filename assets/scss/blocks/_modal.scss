@@ -1,0 +1,124 @@
+.modal {
+	display: none;
+	flex-direction: column;
+	gap: 25px;
+	align-items: center;
+	width: 100%;
+	max-width: 1500px;
+	padding: 100px 80px;
+	color: var(--fc-gray);
+	background: url(assets/images/modal-bg.jpg) no-repeat 50% / cover;
+
+	@include sm {
+		padding: 80px 60px;
+	}
+
+	@include xs {
+		padding: 60px 15px 30px;
+	}
+
+	&--success {
+		max-width: 1000px;
+		color: var(--fc-light);
+	}
+
+	&--question {
+		padding: 60px 80px;
+	}
+
+	.carousel__button.is-close {
+		top: 40px;
+		right: 40px;
+		padding: 0;
+		background: none;
+		border: none;
+		border-radius: 50%;
+		opacity: 1;
+
+		@include md {
+			top: 20px;
+			right: 20px;
+		}
+
+		@include xs {
+			top: 10px;
+			right: 10px;
+		}
+
+		svg {
+			width: 50px;
+			height: 50px;
+
+			@include md {
+				width: 25px;
+				height: 25px;
+			}
+		}
+	}
+
+	&__info,
+	&__form {
+		width: 100%;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	&__title {
+		text-transform: uppercase;
+	}
+
+	&__text {
+		line-height: 1.3;
+
+		@include xs {
+			font-size: 16px;
+		}
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	&__textarea {
+		min-height: 150px;
+
+		@include md {
+			min-height: 100px;
+		}
+
+		@include xs {
+			min-height: 100px;
+		}
+	}
+
+	&__policy {
+		align-self: flex-start;
+		max-width: 360px;
+
+		@include xs {
+			align-self: center;
+			font-size: 16px;
+			text-align: center;
+		}
+	}
+
+	&__submit {
+		align-self: flex-end;
+		margin-top: 15px;
+
+		@include xs {
+			align-self: center;
+		}
+	}
+}

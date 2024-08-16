@@ -21,7 +21,7 @@
 			<?php endif; ?>
 
 			<?php if ( $button['type'] == 'consultation' ) : ?>
-				<button class="btn consultation__btn" type="button" data-fancybox data-src="<?php //TODO modal ?>">
+				<button class="btn consultation__btn" type="button" data-fancybox data-src="#callback">
 					<?php echo $button['text']; ?>
 
 					<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>

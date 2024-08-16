@@ -42,7 +42,7 @@
 			<div class="sewing-secrets__extra"><?php the_sub_field( 'extra' ); ?></div>
 		<?php endif; ?>
 
-		<button class="btn sewing-secrets__btn" type="button" data-fancybox data-src="<?php //TODO modal ?>">
+		<button class="btn sewing-secrets__btn" type="button" data-fancybox data-src="#callback">
 			Получить консультацию
 			<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>
 		</button>
