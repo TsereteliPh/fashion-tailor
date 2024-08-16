@@ -572,3 +572,22 @@ document.addEventListener('DOMContentLoaded', function(e) {
 		})
 	}
 })
+
+// Banner logic for blocks/calculation-banner and
+
+const banners = document.querySelectorAll('.js-banner');
+
+if (banners && window.innerWidth >= 1440) {
+	banners.forEach(banner => {
+		const previousSibling = banner.previousElementSibling;
+		const nextSibling = banner.nextElementSibling;
+		const bannerHeight = banner.offsetHeight;
+
+		banner.style.marginTop = '-' + bannerHeight / 2 + 'px';
+		banner.style.marginBottom = '-' + bannerHeight / 2 + 'px';
+		previousSibling.style.paddingBottom = parseFloat(getComputedStyle(previousSibling).paddingBottom) + bannerHeight / 2 + 'px';
+		nextSibling.style.paddingTop = parseFloat(getComputedStyle(nextSibling).paddingTop) + bannerHeight / 2 + 'px';
+
+		console.log();
+	});
+}
