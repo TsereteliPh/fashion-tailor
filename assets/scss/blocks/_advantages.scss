@@ -1,16 +1,16 @@
 .advantages {
 	position: relative;
-	padding: 150px 0 440px;
+	padding: 150px 0;
 	overflow: hidden;
 	color: var(--fc-light);
 	background: var(--bg-primary) 50% / cover;
 
 	@include hg {
-		padding: 80px 0 200px;
+		padding: 80px 0;
 	}
 
 	@include md {
-		padding: 60px 0 160px;
+		padding: 60px 0;
 	}
 
 	@include xs {
@@ -34,6 +34,18 @@
 	&::after {
 		bottom: 0;
 		background: linear-gradient(to top, #000 0, transparent 100%);
+	}
+
+	&--indent {
+		padding: 150px 0 440px;
+
+		@include hg {
+			padding: 80px 0 200px;
+		}
+
+		@include md {
+			padding: 60px 0 160px;
+		}
 	}
 
 	&__title {

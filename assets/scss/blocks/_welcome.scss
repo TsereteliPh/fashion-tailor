@@ -39,11 +39,12 @@
 
 		@include md {
 			max-width: none;
-			margin: 40px 0 0;
+			margin: 40px 0 20px;
+			color: var(--fc-light);
 		}
 
 		@include xs {
-			margin: 15px 0 0;
+			margin: 15px 0 20px;
 		}
 
 		&--light {

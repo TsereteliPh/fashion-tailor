@@ -1,5 +1,8 @@
-<?php $bg = get_sub_field( 'bg' ); ?>
-<section class="advantages" <?php echo $bg ? 'style="background-image: url(' . $bg . ');"' : ''; ?>>
+<?php
+	$bg = get_sub_field( 'bg' );
+	$indent = get_sub_field( 'indent' );
+?>
+<section class="advantages<?php echo $indent ? ' advantages--indent' : ''; ?>" <?php echo $bg ? 'style="background-image: url(' . $bg . ');"' : ''; ?>>
 	<div class="container">
 		<?php get_template_part( '/layouts/partials/title-default', null, array(
 			'class' => 'advantages__title',
