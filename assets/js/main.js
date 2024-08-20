@@ -347,7 +347,7 @@ if (reasonsCarousel) {
 			afterInit: function() {
 				if (this.slides.length <= this.params.slidesPerView) {
 					this.pagination.el.style.display = 'none';
-					this.navigation.prevEl.parentNode.style.display = 'none';
+					this.navigation.prevEl[0].parentNode.style.display = 'none';
 				}
 			}
 		}
@@ -424,7 +424,7 @@ if (partnersSlider) {
 		on: {
 			afterInit: function() {
 				if (this.slides.length <= this.params.slidesPerView) {
-					this.navigation.prevEl.parentNode.style.display = 'none';
+					this.navigation.prevEl[0].parentNode.style.display = 'none';
 				}
 			}
 		}
@@ -465,7 +465,7 @@ if (gallerySlider) {
 			afterInit: function() {
 				if (this.slides.length <= this.params.slidesPerView) {
 					this.pagination.el.style.display = 'none';
-					this.navigation.prevEl.parentNode.style.display = 'none';
+					this.navigation.prevEl[0].parentNode.style.display = 'none';
 				}
 			}
 		}
@@ -533,7 +533,7 @@ if (certificatesSlider) {
 		on: {
 			afterInit: function() {
 				if (this.slides.length <= this.params.slidesPerView) {
-					this.navigation.prevEl.parentNode.style.display = 'none';
+					this.navigation.prevEl[0].parentNode.style.display = 'none';
 				}
 			}
 		}
