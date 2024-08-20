@@ -1,0 +1,17 @@
+.main-text {
+	margin: 60px 0 40px;
+
+	@include xs {
+		margin: 30px 0;
+	}
+
+	&__text {
+		margin-top: 30px;
+		line-height: 1.4;
+
+		@include xs {
+			margin-top: 20px;
+			font-size: 16px;
+		}
+	}
+}
