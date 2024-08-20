@@ -27,6 +27,7 @@ if ( ! function_exists( 'adem_setup' ) ) {
 		register_nav_menus(
 			array(
 				'menu_main' => 'Основное меню',
+				'dropdown_menu' => 'Выпадающее меню',
 				'footer_menu' => 'Меню футера'
 			)
 		);

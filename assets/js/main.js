@@ -548,6 +548,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
 	if (header) {
 		const headerBurger = header.querySelector('.header__burger');
 		const headerDrop = header.querySelector('.header__drop');
+		const headerCatalog = header.querySelector('.header__catalog');
+		const headerCatalogBurger = headerCatalog.querySelector('.header__catalog-burger');
 
 		const dropOpener = () => {
 			header.classList.add('active');
@@ -570,8 +572,19 @@ document.addEventListener('DOMContentLoaded', function(e) {
 				dropOpener();
 			}
 		})
+
+		if (headerCatalog && window.innerWidth >= 991) {
+			headerCatalog.onclick = () => {
+				headerCatalog.classList.toggle('active');
+				headerCatalogBurger.classList.toggle('active');
+			}
+		}
 	}
 })
+
+//Header dropdown button
+
+const headerCatalog = document.querySelector('.header__catalog');
 
 // Banner logic for blocks/calculation-banner and
 

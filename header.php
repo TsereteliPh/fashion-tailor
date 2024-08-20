@@ -24,9 +24,22 @@
 				Производство спортивной одежды
 			</a>
 
-			<button class="header__catalog" type="button">
-				<span></span>
-			</button>
+			<?php if ( is_nav_menu( 8 ) ) : // local id=7 ?>
+				<div class="header__catalog">
+					<div class="header__catalog-label">Каталог</div>
+
+					<button class="header__catalog-burger" type="button">
+						<span></span>
+					</button>
+
+					<?php wp_nav_menu( array(
+						'theme_location' => 'dropdown_menu',
+						'container' => '',
+						'menu_id' => 'dropdown-menu',
+						'menu_class' => 'reset-list header__catalog-menu'
+					) ); ?>
+				</div>
+			<?php endif; ?>
 
 			<?php wp_nav_menu( array(
 				'theme_location' => 'menu_main',
@@ -63,10 +76,17 @@
 
 		<div class="header__drop">
 			<?php wp_nav_menu( array(
+				'theme_location' => 'dropdown_menu',
+				'container' => '',
+				'menu_id' => 'mobile-dropdown-menu',
+				'menu_class' => 'reset-list header__drop-menu header__drop-menu--first'
+			) ); ?>
+
+			<?php wp_nav_menu( array(
 				'theme_location' => 'menu_main',
 				'container' => '',
-				'menu_id' => 'menu-main',
-				'menu_class' => 'reset-list header__drop-menu'
+				'menu_id' => 'drop-menu',
+				'menu_class' => 'reset-list header__drop-menu header__drop-menu--last'
 			) ); ?>
 
 			<?php if ( $tel || $options ) : ?>
