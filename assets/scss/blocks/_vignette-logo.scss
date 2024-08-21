@@ -49,16 +49,16 @@
 			max-width: 450px;
 			transform: translateX(50%);
 		}
-	}
 
-	&__logo-svg {
-		width: 135px;
-		height: auto;
-		aspect-ratio: 135/200;
-		background: #fff;
+		svg {
+			width: 135px;
+			height: auto;
+			color: var(--fc-light);
 
-		@include lg {
-			width: 100px;
+			@include lg {
+				width: 100px;
+			}
+
 		}
 	}
 

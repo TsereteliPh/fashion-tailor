@@ -14,7 +14,7 @@
 		</div>
 
 		<div class="individuality__info">
-			<div class="individuality__logo"><?php //TODO logo ?></div>
+			<svg class="individuality__logo" width="527" height="756"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-logo"></use></svg>
 
 			<?php if ( get_sub_field( 'small-text' ) ) : ?>
 				<div class="individuality__small-text"><?php the_sub_field( 'small-text' ); ?></div>

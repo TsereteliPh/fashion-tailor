@@ -209,7 +209,7 @@ acf_add_local_field_group(array(
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
-				'width' => '',
+				'width' => '50',
 				'class' => '',
 				'id' => '',
 			),
@@ -226,6 +226,28 @@ acf_add_local_field_group(array(
 			'preview_size' => 'medium',
 			'acfe_field_group_condition' => 0,
 			'library' => 'all',
+		),
+		array(
+			'key' => 'field_66c49b745cb2b',
+			'label' => 'Дополнительный отступ снизу',
+			'name' => 'indent',
+			'aria-label' => '',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '50',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
+			'ui' => 1,
+			'acfe_field_group_condition' => 0,
+			'style' => '',
 		),
 	),
 	'location' => array(
@@ -253,7 +275,7 @@ acf_add_local_field_group(array(
 	'acfe_display_title' => '',
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1723555035,
+	'modified' => 1724160914,
 ));
 
 endif;

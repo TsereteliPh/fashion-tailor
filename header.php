@@ -19,7 +19,7 @@
 	<div class="container">
 		<div class="header__panel">
 			<a href="<?php echo bloginfo( 'url' ); ?>" class="header__logo" aria-label="Логотип компании Fashion Tailor">
-				<div class="logo"></div>
+				<svg width="527" height="756"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-logo"></use></svg>
 
 				Производство спортивной одежды
 			</a>
