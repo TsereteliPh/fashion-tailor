@@ -30,7 +30,8 @@
 
 			<div class="footer__info">
 				<a href="<?php echo bloginfo( 'url' ); ?>" class="footer__logo">
-					<div class="logo"></div>
+					<svg width="527" height="756"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-logo"></use></svg>
+
 					Производство спортивной одежды
 				</a>
 
