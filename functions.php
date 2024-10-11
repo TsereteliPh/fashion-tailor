@@ -126,6 +126,54 @@ function adem_excerpt( $limit, $ID = null ) {
 	return mb_substr( get_the_excerpt( $ID ), 0, $limit ) . '...';
 }
 
+// Marquiz script
+add_action( 'wp_head', 'marquiz_head_script' );
+function marquiz_head_script() {
+	?>
+		<!-- Marquiz script start -->
+		<script>
+			(function(w, d, s, o){
+				var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+					if (document.readyState !== 'loading') Marquiz.init(o);
+					else document.addEventListener("DOMContentLoaded", function() {
+						Marquiz.init(o);
+					});
+				};
+				d.head.insertBefore(j, d.head.firstElementChild);
+			})(window, document, 'script', {
+				host: '//quiz.marquiz.ru',
+				region: 'eu',
+				id: '66f51a9317e23800269413f3',
+				autoOpen: false,
+				autoOpenFreq: 'once',
+				openOnExit: true,
+				disableOnMobile: false
+			});
+		</script>
+		<!-- Marquiz script end -->
+	<?php
+}
+
+// Marquiz footer banner script
+add_action('wp_footer', 'marquiz_footer_banner_script');
+function marquiz_footer_banner_script() {
+	?>
+		<script>
+			(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Pop', {id: '66f51a9317e23800269413f3', title: 'Выбрать услугу', text: 'Пошив одежды', delay: 20, textColor: '#ffffff', bgColor: '#ff4710', svgColor: '#ffffff', closeColor: '#ffffff', bonusCount: 0, type: 'side', position: 'position_bottom-left', blicked: true})
+		</script>
+	<?php
+}
+
+// Marquiz footer button script
+add_action('wp_footer', 'marquiz_footer_button_script');
+function marquiz_footer_button_script() {
+	?>
+		<script>
+			(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Button', {id: '66f51a9317e23800269413f3', buttonText: '«Выбрать услугу»', bgColor: '#ff4710', textColor: '#ffffff', shadow: 'rgba(255, 71, 16, 0.5)', blicked: true})
+		</script>
+	<?php
+}
+
 //! start temporarily fix acf extended pro
 // ACFE 0.9.0.5: Fix compatibility with clone on ACF 6.3.2
 add_action('acf/init', 'my_acfe_fix_clone', 100);
