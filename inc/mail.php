@@ -122,6 +122,7 @@ function send_mail() {
 	if ( empty ( $_POST['form_name'] ) || empty( $_POST['page_request'] ) ) exit;
 	if ( $_POST['form_name'] == 'Звонок' && ! wp_verify_nonce( $_POST['modal-callback-nonce'], $_POST['form_name'] ) ) exit;
 	if ( $_POST['form_name'] == 'Вопрос' && ! wp_verify_nonce( $_POST['modal-question-nonce'], $_POST['form_name'] ) ) exit;
+	if ( $_POST['form_name'] == 'Фото' && ! wp_verify_nonce( $_POST['modal-image-nonce'], $_POST['form_name'] ) ) exit;
 
 	$form_name = $_POST['form_name'];
 	$mail = '';

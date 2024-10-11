@@ -67,3 +67,34 @@
 		<?php wp_nonce_field( 'Вопрос', 'modal-question-nonce' ); ?>
 	</form>
 </div>
+
+<div class="modal modal--image" id="image">
+	<div class="modal__info">
+		<div class="title modal__title">Загрузить фото</div>
+
+		<div class="modal__text">Загрузите фото и наши специалисты перезвонят вам в ближайшее время.</div>
+	</div>
+
+	<form method="POST" class="modal__form" name="Фото">
+		<input type="text" class="input modal__input" name="client_name" placeholder="ФИО" required>
+
+		<input type="email" class="input modal__input" name="client_email" placeholder="Email" required>
+
+		<div class="file-box modal__file">
+			<input class="file-box__input" type="file" id="file-input" name="client_file" accept=".png, .jpg, .jpeg" size="1000000">
+
+			<label class="btn btn--unfill file-box__label" for="file-input">Загрузить фото</label>
+		</div>
+
+		<div class="modal__policy">
+			Нажимая кнопку, вы соглашаетесь с
+			<a href="<?php echo $privacy_url; ?>">политикой персональных данных</a>
+		</div>
+
+		<button class="btn modal__submit" type="submit">Задать вопрос</button>
+
+		<input type="text" class="hidden" name="page_request" value="<?php echo $page_title; ?>">
+
+		<?php wp_nonce_field( 'Фото', 'modal-image-nonce' ); ?>
+	</form>
+</div>

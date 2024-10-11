@@ -27,3 +27,32 @@
 		border-color: var(--primary);
 	}
 }
+
+.file-box {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	width: 100%;
+	font-weight: 500;
+	font-size: 14px;
+
+	@include xs {
+		max-width: 250px;
+	}
+
+	&__input {
+		display: none;
+		appearance: none;
+	}
+
+	&__label {
+		flex-grow: 1;
+		min-width: auto;
+		max-width: none;
+		padding: 10px 40px;
+		color: var(--fc-light);
+		font-weight: 500;
+		font-size: 14px;
+		text-transform: none;
+	}
+}
