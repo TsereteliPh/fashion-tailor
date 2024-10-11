@@ -47,7 +47,7 @@
 					<?php if ( $socials ) : ?>
 						<div class="contacts__socials">
 							<?php foreach ( $socials as $social ) : ?>
-								<a href="<?php echo $social['link']; ?>" class="contacts__social">
+								<a href="<?php echo $social['link']; ?>" class="contacts__social contacts__social--<?php echo $social['social']; ?>">
 									<svg width="20" height="20"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-<?php echo $social['social']; ?>"></use></svg>
 									<?php echo $social['label']; ?>
 								</a>
