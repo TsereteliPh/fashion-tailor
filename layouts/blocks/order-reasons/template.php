@@ -48,7 +48,7 @@
 				<div class="order-reasons__extra-modal">
 					<div class="order-reasons__extra-text">На онлайн-встрече обсудим референсы и предоставим точную смету</div>
 
-					<button class="btn order-reasons__extra-btn" type="button" data-fancybox data-src="#callback">
+					<button class="btn order-reasons__extra-btn" type="button" data-fancybox data-src="#callback" data-modal-title="Заказать звонок">
 						Обсудить заказ
 						<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>
 					</button>

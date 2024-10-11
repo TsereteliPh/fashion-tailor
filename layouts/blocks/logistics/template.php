@@ -31,10 +31,5 @@
 				<?php
 			endif;
 		?>
-
-		<button class="btn logistics__btn" type="button" data-fancybox data-src="<?php //TODO modal ?>">
-			Пройти тест
-			<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>
-		</button>
 	</div>
 </section>

@@ -14,8 +14,8 @@
 						<div class="welcome__text"><?php echo $welcome['text']; ?></div>
 					<?php endif; ?>
 
-					<button class="btn welcome__btn" type="button" data-fancybox data-src="<?php //TODO add calc modal ?>">
-						Рассчитать цену онлайн
+					<button class="btn welcome__btn" type="button" data-fancybox data-src="#callback" data-modal-title="Рассчитать цену">
+						Рассчитать цену
 						<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>
 					</button>
 				</div>
@@ -28,8 +28,8 @@
 					</div>
 				<?php endif; ?>
 
-				<button class="btn welcome__mobile-btn" type="button" data-fancybox data-src="<?php //TODO add calc modal ?>">
-					Рассчитать цену онлайн
+				<button class="btn welcome__mobile-btn" type="button" data-fancybox data-src="#callback" data-modal-title="Рассчитать цену">
+					Рассчитать цену
 					<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>
 				</button>
 			</div>

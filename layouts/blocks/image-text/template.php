@@ -22,7 +22,7 @@
 				<div class="image-text__text"><?php echo $text; ?></div>
 			<?php endif; ?>
 
-			<button class="btn image-text__btn" type="button" data-fancybox data-src="<?php echo $button == 'cunsultation' ? '#callback' : ''; //TODO modal price ?>">
+			<button class="btn image-text__btn" type="button" data-fancybox data-src="#callback"<?php echo $button == 'cunsultation' ? ' data-modal-title="Рассчитать стоимость"' : ''; ?>>
 				<?php
 					if ( $button == 'consultation' ) {
 						echo 'Получить консультацию';

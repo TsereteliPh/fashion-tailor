@@ -604,3 +604,17 @@ if (banners && window.innerWidth >= 1440) {
 		console.log();
 	});
 }
+
+// Change title on price modals
+const calcPriceBtns = document.querySelectorAll('[data-modal-title]');
+
+if (calcPriceBtns) {
+	calcPriceBtns.forEach(btn => {
+		btn.addEventListener('click', function() {
+			const modal = document.querySelector('.modal#callback');
+			const modalTitle = modal.querySelector('.modal__title');
+
+			modalTitle.textContent = this.dataset.modalTitle;
+		})
+	});
+}

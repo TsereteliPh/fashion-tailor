@@ -33,7 +33,7 @@
 			<a href="<?php echo $privacy_url; ?>">политикой персональных данных</a>
 		</div>
 
-		<button class="btn modal__submit" type="submit">Получить консультацию</button>
+		<button class="btn modal__submit" type="submit">Отправить</button>
 
 		<input type="text" class="hidden" name="page_request" value="<?php echo $page_title; ?>">
 
