@@ -394,8 +394,9 @@ if (reviewsSliders) {
 			},
 			on: {
 				afterInit: function() {
+					console.log(this.navigation);
 					if (this.slides.length <= this.params.slidesPerView) {
-						this.navigation.prevEl.parentNode.style.display = 'none';
+						slider.querySelector('.reviews__controls').style.display = 'none';
 					}
 				}
 			}
