@@ -173,6 +173,30 @@ acf_add_local_field_group(array(
 					),
 				),
 				array(
+					'key' => 'field_67124d1c2bab7',
+					'label' => 'Кнопка',
+					'name' => 'button',
+					'aria-label' => '',
+					'type' => 'button_group',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'choices' => array(
+						'modal' => 'Модальное окно',
+						'marquiz' => 'Квиз',
+					),
+					'default_value' => '',
+					'return_format' => 'value',
+					'allow_null' => 0,
+					'layout' => 'horizontal',
+					'acfe_field_group_condition' => 0,
+				),
+				array(
 					'key' => 'field_66a8d1cdae8c1',
 					'label' => 'Фоновое изображение',
 					'name' => 'bg',
@@ -261,7 +285,7 @@ acf_add_local_field_group(array(
 	'acfe_display_title' => '',
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1723814982,
+	'modified' => 1729252697,
 ));
 
 endif;

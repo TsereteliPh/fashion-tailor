@@ -14,10 +14,14 @@
 						<div class="welcome__text"><?php echo $welcome['text']; ?></div>
 					<?php endif; ?>
 
-					<button class="btn welcome__btn" type="button" data-fancybox data-src="#callback" data-modal-title="Рассчитать цену">
-						Рассчитать цену
-						<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>
-					</button>
+					<?php if ( $welcome['button'] == 'modal' ) : ?>
+						<button class="btn welcome__btn" type="button" data-fancybox data-src="#callback" data-modal-title="Рассчитать цену">
+							Рассчитать цену
+							<svg width="18" height="18"><use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#icon-arrow-diagonal"></use></svg>
+						</button>
+					<?php else : ?>
+						<div data-marquiz-id="66f51a9317e23800269413f3"></div>
+					<?php endif; ?>
 				</div>
 			</div>
 
