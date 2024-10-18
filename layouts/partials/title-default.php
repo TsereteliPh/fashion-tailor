@@ -8,6 +8,6 @@ if ( ! empty( $args['title']['text'] ) ) {
 		$args['title']['type'],
 		$args['class'],
 		$args['title']['text'],
-		$args['title']['highlighted'],
+		$args['title']['highlighted'] ?? null,
 	);
 }
