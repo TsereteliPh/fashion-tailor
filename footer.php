@@ -20,6 +20,11 @@
 				спортивной одежды<br>
 				<br>
 				Copyright <?php echo date( 'Y' ); ?>
+
+				<a href="https://ademcorp.ru/" class="footer__adem-link" target="_blank">
+					Разработка сайта
+					<span></span>
+				</a>
 			</div>
 
 			<div class="footer__address">

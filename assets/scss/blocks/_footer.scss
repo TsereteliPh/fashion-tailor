@@ -82,6 +82,26 @@
 		}
 	}
 
+	&__adem-link {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 15px;
+		text-decoration: none;
+
+		@include sm {
+			align-items: center;
+		}
+
+		span {
+			display: block;
+			width: 140px;
+			height: auto;
+			aspect-ratio: 120/18;
+			background: url(assets/images/adem-logo.png) no-repeat 50% / contain;
+		}
+	}
+
 	&__address {
 		max-width: 220px;
 		font-size: 16px;
