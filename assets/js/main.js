@@ -394,7 +394,6 @@ if (reviewsSliders) {
 			},
 			on: {
 				afterInit: function() {
-					console.log(this.navigation);
 					if (this.slides.length <= this.params.slidesPerView) {
 						slider.querySelector('.reviews__controls').style.display = 'none';
 					}
@@ -601,8 +600,6 @@ if (banners && window.innerWidth >= 1440) {
 		banner.style.marginBottom = '-' + bannerHeight / 2 + 'px';
 		previousSibling.style.paddingBottom = parseFloat(getComputedStyle(previousSibling).paddingBottom) + bannerHeight / 2 + 'px';
 		nextSibling.style.paddingTop = parseFloat(getComputedStyle(nextSibling).paddingTop) + bannerHeight / 2 + 'px';
-
-		console.log();
 	});
 }
 

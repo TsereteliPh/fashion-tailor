@@ -218,4 +218,4 @@ require 'inc/acf.php';
 require 'inc/mail.php';
 require 'inc/svg.php';
 require 'inc/tiny-mce.php';
-require 'inc/traffic.php';
+// require 'inc/traffic.php';
